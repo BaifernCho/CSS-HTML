@@ -1,0 +1,43 @@
+.box{
+    display: inline-block;
+    background-color: blueviolet;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: aqua;
+
+}
+.box-1{
+    animation-name: box-jumping;
+    animation-duration: 1s;
+    animation-iteration-count: 3;  
+    animation-delay: 0s;
+}
+
+.box-2{
+    animation: box-jumping 1s  3s 3 ;
+}
+
+.box-3{
+    animation: box-jumping 1s  6s 3 ;
+}
+.box-4{
+    animation: box-jumping 1s  9s 3 ;
+}
+
+
+@keyframes box-jumping{
+    0%{
+        transform: translateY(0%);
+        animation-timing-function: ease-in-out;
+    }
+    50%{
+        transform: translateY(-100%);
+        animation-timing-function: ease-in-out;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
