@@ -1,0 +1,7 @@
+.body{
+    background-color: rgb(73, 72, 72);
+}
+
+.image{
+    filter: drop-shadow(10px 7px 10px orange);
+}
